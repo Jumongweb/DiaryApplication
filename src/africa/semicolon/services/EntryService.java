@@ -1,4 +1,4 @@
-package services;
+package africa.semicolon.services;
 
 public interface EntryService {
 }

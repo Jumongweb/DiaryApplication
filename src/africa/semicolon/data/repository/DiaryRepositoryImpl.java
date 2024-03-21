@@ -1,4 +1,4 @@
-package data.repository;
+package africa.semicolon.data.repository;
 
 public class DiaryRepositoryImpl {
 }

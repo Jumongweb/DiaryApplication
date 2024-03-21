@@ -1,4 +1,4 @@
-package africa.semicolon.requests;
+package africa.semicolon.dtos.requests;
 
 public class LoginRequest {
 }

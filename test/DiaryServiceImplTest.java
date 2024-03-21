@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class DiaryServiceImplTest {
+public class DiaryServiceImplTest {
+    @Test
+    public static void testOne(){
+
+    }
 }

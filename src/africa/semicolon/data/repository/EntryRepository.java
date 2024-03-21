@@ -1,5 +1,8 @@
-package data.repository;
+package africa.semicolon.data.repository;
 
-public interface EntryRepository {
+import africa.semicolon.data.models.Entry;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface EntryRepository extends MongoRepository<Entry, String> {
 
 }
