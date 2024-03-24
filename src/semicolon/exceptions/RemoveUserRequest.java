@@ -1,2 +1,8 @@
-package semicolon.services;public class RemoveUserRequest {
+package semicolon.exceptions;
+
+public class RemoveUserRequest extends RuntimeException {
+    public RemoveUserRequest(String message){
+        super(message);
+    }
 }
+

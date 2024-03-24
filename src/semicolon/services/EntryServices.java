@@ -1,19 +1,12 @@
 package semicolon.services;
 
 import semicolon.data.models.Entry;
-import semicolon.dtos.requests.CreateEntryRequest;
 
 import java.util.List;
 
-public interface EntryService {
+public interface EntryServices {
+    void save(Entry entry);
+    void deleteEntry(String id);
+    Entry getEntry(String id);
     List<Entry> getEntriesFor(String username);
-
-    Entry createNewEntryWith(String username);
-
-    Entry findByAuthor(String author);
-
-    void deleteWith(String title);
-    void addEntry(CreateEntryRequest createEntryRequest);
-
-    int getNumberOfEntries();
 }

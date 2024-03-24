@@ -1,8 +1,12 @@
-package africa.semicolon.data.repository;
+package semicolon.data.repository;
 
-import africa.semicolon.data.models.Entry;
+import org.springframework.stereotype.Repository;
+import semicolon.data.models.Entry;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface EntryRepository extends MongoRepository<Entry, String> {
+import java.util.List;
 
+@Repository
+public interface EntryRepository extends MongoRepository<Entry, String> {
+    List<Entry> findByAuthor(String author);
 }

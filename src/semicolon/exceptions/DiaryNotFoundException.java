@@ -1,4 +1,4 @@
-package africa.semicolon.exceptions;
+package semicolon.exceptions;
 
 public class DiaryNotFoundException extends RuntimeException {
     public DiaryNotFoundException(String message) {

@@ -1,4 +1,4 @@
-package africa.semicolon.data.models;
+package semicolon.data.models;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -15,4 +15,15 @@ public class Entry {
     private String title;
     private String body;
     private LocalDate dateCreated = LocalDate.now();
+
+    @Override
+    public String toString(){
+        return String.format("""
+                id: %s%n
+                author: %s%n
+                title: %s%n
+                body: %s%n
+                date: %s%n
+                """, getId(), getAuthor(), getTitle(), getBody(), getDateCreated());
+    }
 }

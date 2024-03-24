@@ -1,8 +1,10 @@
-package africa.semicolon.data.repository;
+package semicolon.data.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import africa.semicolon.data.models.Diary;
+import org.springframework.stereotype.Repository;
+import semicolon.data.models.Diary;
 
+@Repository
 public interface DiaryRepository extends MongoRepository<Diary, String> {
 
 }
